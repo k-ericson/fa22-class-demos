@@ -1,5 +1,6 @@
 #ifndef FRAC_H
 #define FRAC_H
+#include <iostream>
 
 class Frac{
  private:
@@ -9,7 +10,7 @@ class Frac{
   bool operator==(Frac rhs);
   Frac();
   Frac(int n, int d);
-  friend ostream& operator<<(ostream &out, Frac& toPrint);
+  friend std::ostream& operator<<(std::ostream &out, Frac& toPrint);
     
 };
 #endif //FRAC_H
